@@ -30,14 +30,14 @@ function reset() {
 function tag(element) {
     if (turn == true) {
         let circle = document.createElement('img');
-        circle.src = `../circle.jpg`;
+        circle.src = `./circle.jpg`;
         element.appendChild(circle);
         win();
         draw()
         turn = false;
     } else if (turn == false && document.getElementById("checkbox").checked == false) {
         let cross = document.createElement('img');
-        cross.src = `../cross.jpg`;
+        cross.src = `./cross.jpg`;
         element.appendChild(cross);
         win();
         draw();
